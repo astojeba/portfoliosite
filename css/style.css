@@ -1,0 +1,81 @@
+stlyle.CSS
+/*
+Colors used
+
+Primary Orange (Orange): #f09641;
+Secondary Color (Black): #333333;
+Split-Complementary Value (Teal):#41f0e7
+Tertiary Color (Grey): #bebebe
+*/
+
+
+
+body {
+  font-family: 'Dosis', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  line-height: 1.6; /* Sets the line-height to 1.6 */
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+div {
+    padding: 10px;
+    margin: 10px;
+  }
+
+/* Link Styles */
+a {
+  color: #f09641;
+}
+
+a:visited {
+    color: #bebebe;
+  }
+
+  a:hover {
+    color: #f09641;
+    text-decoration: none;
+  }
+
+  a:active {
+    color: #41f0e7;
+  }
+
+  /* Buttons */
+
+  button {
+  /* overwrite browser defaults */
+  border: none; /* reset the border */
+  font-family: inherit; /* takes the font from the outer container */
+
+  /* style button */
+  background-color: #f09641;
+  color: white !important;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #f09641; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+button:hover, button:focus
+{
+ cursor: pointer;
+ opacity: 0.8;
+ background-color: #f09641
+}
+
+
+.button-secondary {
+  background-color: #41f0e7;
+}
