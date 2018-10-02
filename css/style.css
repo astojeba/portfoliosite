@@ -49,6 +49,8 @@ a:visited {
 
   a:active {
     color: #41f0e7;
+    text-decoration: none;
+
   }
 
   /* Buttons */
