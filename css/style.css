@@ -1,11 +1,11 @@
-stlyle.CSS
+
 /*
 Colors used
 
 Primary Orange (Orange): #f09641;
 Secondary Color (Black): #333333;
-Split-Complementary Value (Teal):#41f0e7
 Tertiary Color (Grey): #bebebe
+Split-Complementary Value (Teal):#41f0e7
 */
 
 
@@ -14,38 +14,43 @@ body {
   font-family: 'Dosis', sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   line-height: 1.6; /* Sets the line-height to 1.6 */
+  background-color: white;
+  font-weight: 800;
+
 }
+
+
+
 
 h1 {
   font-size: 30px;
+  font-weight: 800;
+
 }
 
 h2 {
   font-size: 24px;
+  font-weight: 800;
 }
 
 h3 {
   font-size: 18px;
+  font-weight: 800;
 }
-
-div {
-    padding: 10px;
-    margin: 10px;
-  }
 
 /* Link Styles */
 a {
   color: #f09641;
+  text-decoration: none;
 }
 
 a:visited {
-    color: #bebebe;
+    color: #f09641;
   }
 
   a:hover {
-    color: #f09641;
-    text-decoration: none;
-  }
+    text-decoration: underline;
+
 
   a:active {
     color: #41f0e7;
@@ -74,7 +79,7 @@ button:hover, button:focus
 {
  cursor: pointer;
  opacity: 0.8;
- background-color: #f09641
+ background-color: #f09641;
 }
 
 
