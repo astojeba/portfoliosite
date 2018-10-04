@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alex Stojeba UX Designer Berlin</title>
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -12,7 +13,7 @@
 <body>
   <!-- header -->
   <header>
-    <div>
+    <div class="container">
       <img src="images/alex-orange-logo.svg" alt="logo">
       <nav>
         <ul>
@@ -27,47 +28,55 @@
   <main>
 
     <!-- hero -->
-    <div>
-      <div>
+    <div id="hero">
+      <div class="container">
         <h1>Hello! My name is Alex and I am a <span>data-driven, user-focused designer</span> with a background in content and marketing.</h1>
         <p>
           I excel in applying Design Thinking to all challenges to deliver better results. When I’m not working, I enjoy quenching my deep curiosity for learning by listening to podcasts, reading about urban development and current affairs, and championing the cause of the Oxford Comma.
         </p>
-        <a href="files/alex-stojeba-cv.pdf" target="_blank">VIEW RESUME</a>
+        <div>
+          <p>
+            bla
+          </p>
+        </div>
+        <a href="files/alex-stojeba-cv.pdf" class="button uppercase" target="_blank">view resume</a>
       </div>
     </div>
 
     <!-- work section -->
-    <div>
-      <div>
-        <h2> My Work</h2>
+    <div id="work">
+      <div class="heading">
+        <h2 class="uppercase">My Work</h2>
       </div>
     </div>
 
     <!-- project block-->
-    <div>
-      <div>
-        <img src="images/alex-inkquiry.jpg" alt="InkQuiry: A webb app">
+    <div cass="container">
+      <div class"row">
+        <div class="col-lg-6 col-sm-12">
+          <img src="images/alex-inkquiry.jpg" alt="InkQuiry: A webb app">
+        </div>
+        <div>
+          <h3>InkQuiry: A Webb App</h3>
+          <p>
+            I created a web app that allows both tattoo enthusiasts and those new to the tattoo scene to seamlessly explore design inspirations according to preferences, such as artists and styles.
+          </p>
+        </div>
       </div>
-      <div>
-        <h3>InkQuiry: A Webb App</h3>
-        <p>
-          I created a web app that allows both tattoo enthusiasts and those new to the tattoo scene to seamlessly explore design inspirations according to preferences, such as artists and styles.
-        </p>
-      </div>
-    </div>
 
-    <!-- project block-->
-    <div class="row">
-      <div class="col-6">
-        <img src="images/alex-wellnow.jpg" alt="Wellnow">
+      <!-- project block-->
+      <div class="row">
+        <div class="col-6">
+          <img src="images/alex-wellnow.jpg" alt="Wellnow">
+        </div>
+        <div class="col-6">
+          <h3>Wellnow: Customer Experience Map</h3>
+          <p>
+            When tasked with mapping and optimizing the touch points with which customers interact, I created a customer experience map to better understand the user's thoughts, feelings, and pain points. These findings contributed to overhauling the points at which e-mails, push notifications, and brochures were delivered to the customer.
+          </p>
+        </div>
       </div>
-      <div class="col-6">
-        <h3>Wellnow: Customer Experience Map</h3>
-        <p>
-          When tasked with mapping and optimizing the touch points with which customers interact, I created a customer experience map to better understand the user's thoughts, feelings, and pain points. These findings contributed to overhauling the points at which e-mails, push notifications, and brochures were delivered to the customer.
-        </p>
-      </div>
+
     </div>
 
   </main>
@@ -81,7 +90,7 @@
       <p>
         Feel free to get in touch!
       </p>
-      <a href="mailto:astojeba@gmail.com">Send me a message</a>
+      <a href="mailto:astojeba@gmail.com" class="button">Send me a message</a>
       <!-- Icons -->
       <div>
         <ul>
