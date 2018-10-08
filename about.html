@@ -13,7 +13,7 @@
   <!-- header -->
   <header>
     <div class="container">
-      <img src="images/alex-orange-logo.svg" alt="logo">
+      <img src="images/alex-orange-logo.svg" class="logo" alt="logo">
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -29,10 +29,10 @@
 
 
     <!-- hero -->
-    <div id= "hero about">
-      <div class = "container">
+    <div id="about">
+      <div class="container">
         <h1>About me</h1>
-        <img src="images/alex-profile.jpg" alt="alex-img">
+        <img src="images/alex-profile.jpg" class="center" alt="alex-img">
         <h2>I solve problems through design</h2>
         <p>
           I am a data-driven, user-focused designer with a background in content and marketing. I excel in applying Design Thinking to all challenges to deliver better results. During my several years of experience working in startups,I have initiated and overseen marketing campaigns and user touch points, optimized content through data analysis, and cultivated SEO and SEA expertise. In addition, I have excellent communication and presentation skills, along with bilingual proficiency in English and German. I aim to draw upon these skills and take on projects that empower their users through emotional, human design.
@@ -41,11 +41,20 @@
     </div>
     <!-- skills and tools -->
 
+
+    <div class="heading">
+      <div class="centertext">
+        <a href="files/alex-stojeba-cv.pdf" class="button uppercase" target="_blank">view resume</a>
+      </div>
+    </div>
+
+
     <div>
-      <div>
+      <div class="container">
         <h2>Skills and Tools</h2>
-        <div>
-          <div>
+        <div class="row">
+          <div class="col-lg-5 col-md-6 col-sm-12">
+            <h3>Skills</h3>
             <ul>
               <li>User Research</li>
               <li>User Testing</li>
@@ -61,7 +70,7 @@
               <li>CSS</li>
             </ul>
           </div>
-          <div>
+          <div class="col-lg-5 col-md-6 col-sm-12">
             <h3>Tools</h3>
             <ul>
               <li>Sketch</li>
@@ -81,25 +90,25 @@
     </div>
   </main>
 
-  <footer id="contact" class = "container">
-    <div>
-      <h2>Get in touch</h2>
+  <footer id="contact" >
+    <h2 class="heading">Get in touch with Alex</h2>
+    <div class="container">
       <p>
         Does a project you are working on need awesome user experience? Are you a recruiter seeking an enthusiastic, experienced addition to your team?
       </p>
       <p>
         Feel free to get in touch!
       </p>
-      <a href="mailto:astojeba@gmail.com">Send me a message</a>
-
-      <!-- Icons -->
+      <a href="mailto:astojeba@gmail.com" class="button">Send me a message</a>
       <div>
+        <!-- Icons -->
         <ul>
           <li><a href="https://www.linkedin.com/in/alexstojeba/"><i class="fab fa-linkedin"></i></a></li>
           <li><a href="https://www.behance.net/alexstojeba"><i class="fab fa-behance-square"></i></a></li>
         </ul>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>

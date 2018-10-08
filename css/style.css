@@ -22,12 +22,16 @@ body {
 h1 {
   font-size: 2.5em;
   font-weight: 700;
-  text-align: center;;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0.67em;
 }
 
 h2 {
   font-size: 1.75em;
   font-weight: 700;
+  margin-top: 0;
+  padding-top: 0.83em;
 }
 
 h3 {
@@ -73,95 +77,235 @@ img {
   display: inline-block;
 }
 
-.center {
-    text-align: center;
-
-}
-
 .button:hover, .button:focus {
   opacity: 0.8;
   text-decoration: none;
+}
+
+.centertext {
+  text-align: center;
 }
 
 .uppercase {
   text-transform: uppercase;
 }
 
-/* Layout styling */
+.heading {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+/* header */
+header {
+  background-color:#e5e5e5;
+  padding: 10px 0 5px;
+}
+
+.logo {
+  width: 100px;
+}
 
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+}
+
+
+.inkhero {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+
+nav {
+  float: right;
+  margin-top: 32px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  float: left;
+  margin-left: 40px;
+}
+
+/* Container & Columns */
 .container {
   max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-
-.navigation > li {
-  list-style-type: none;
-  padding: 0;
-  display: inline-block;
-  margin-left: 10px;
-  float: right;
+[class*="col-"] {
+    float: left;
+    padding: 15px;
 }
 
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 
-.heading {
-  background-color: #000;
-  color: #fff;
+.col-lg-5 {
+  width: 41.66%;;
+}
+
+.col-lg-7 {
+  width: 58.33%;
+}
+
+/* hero & work */
+#hero {
+  background-color: #e5e5e5;
+  padding: 30px 0;
+
+}
+
+#hero .container {
+  max-width: 750px;
+}
+
+#work h2 {
+  padding: 0;
+  margin: 0;
+}
+
+/* about */
+
+/* footer */
+footer {
+  background-color: #e5e5e5;
   text-align: center;
 }
 
-.col-6 {
-  width: 48%;
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   display: inline-block;
-  margin-right: 2;
+}
+
+footer ul li {
   float: left;
+  padding: 30px;
 }
 
-.column-6:last-child {
-margin-right: 0;
+footer .fab {
+  font-size: 38px;
 }
-
-.row {
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-  border-bottom: 1px solid #EEE;
-}
-
-.row:last-child {
-  border-bottom: none;
-
-  @media all and (max-width: 500px) {
-
-}
-
-@media all and (max-width: 300px) {
-  .logo {
-    /* Make logo smaller by changing it's height */
-    height: 10px;
+/* ==============================
+Medium devices (larger than 767px)
+================================= */
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 18px;
   }
-  h1 {
-    /* Reduce font-size of heading */
-    font-size: 24px;
-    text-align: left;
-  }
-  .column-4 {
-    /* Modify 4-column to 2-columns */
-    width: 49%;
-    margin-right: 1%;
-  }
+
+  .col-md-6 {
+    width: 50%;
 }
+
+
+.container {
+  max-width: 1200px;
+  padding: 10px 0 0;
+  margin: inherit;
+}
+
+
 
 
 
 
 /* ==============================
-Medium devices (larger than 640px)
+Small devices (smaller than 768px)
 ================================= */
-@media only screen and (max-width: 641px) {
+@media only screen and (max-width: 767px) {
   body {
     font-size: 16px;
   }
+
+  header {
+    text-align:center;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 250px;
+  }
+
+
+  .inkhero {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 350px;
+  }
+
+  nav {
+    float: none;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    display: inline-block;
+  }
+
+  nav ul li {
+    margin: 0 20px;
+  }
+
+  h1 {
+    font-size: 2em;
+    line-height: 1.4;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  [class*="col-"] {
+      padding: 0;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+}
+
+.button {
+  /* overwrite browser defaults */
+  margin: 0 0 10px 0;
+  border: none; /* reset the border */
+  background-color: #f09641;
+  color: white !important;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #f09641; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  display: inline-block;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 10px 0 0;
+  margin: 10px 10px 10px 10px; 
 }
