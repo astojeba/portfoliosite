@@ -218,7 +218,7 @@ Medium devices (larger than 767px)
 
 .container {
   max-width: 1200px;
-  padding: 10px 0 0;
+  padding: 10px 10px 0;
   margin: inherit;
 }
 /* ==============================
