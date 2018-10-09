@@ -1,6 +1,5 @@
 /*
 Colors used
-
 Primary Orange (Orange): #f09641;
 Secondary Color (Black): #333333;
 Tertiary Color (Grey): #bebebe
@@ -114,15 +113,6 @@ header {
     width: 350px;
 }
 
-
-.inkhero {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 700px;
-}
-
-
 nav {
   float: right;
   margin-top: 32px;
@@ -146,6 +136,14 @@ nav ul li {
   margin: 0 auto;
 }
 
+
+.containers {
+  max-width: 1200px;
+  padding-left: 99px;
+  padding-right: 99px;
+  margin: 0 auto;
+}
+
 [class*="col-"] {
     float: left;
     padding: 15px;
@@ -165,6 +163,11 @@ nav ul li {
   width: 58.33%;
 }
 
+.col-lg-about-6 {
+  width: 50%;
+
+}
+
 /* hero & work */
 #hero {
   background-color: #e5e5e5;
@@ -173,7 +176,7 @@ nav ul li {
 }
 
 #hero .container {
-  max-width: 750px;
+  max-width: 770px;
 }
 
 #work h2 {
@@ -181,7 +184,8 @@ nav ul li {
   margin: 0;
 }
 
-/* about */
+
+
 
 /* footer */
 footer {
@@ -221,6 +225,8 @@ Medium devices (larger than 767px)
   padding: 10px 10px 0;
   margin: inherit;
 }
+
+
 /* ==============================
 Small devices (smaller than 768px)
 ================================= */
@@ -244,12 +250,6 @@ Small devices (smaller than 768px)
       width: 250px;
   }
 
-  .inkhero {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 350px;
-  }
 
   nav {
     float: none;
