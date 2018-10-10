@@ -113,6 +113,13 @@ header {
     width: 350px;
 }
 
+.center-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 nav {
   float: right;
   margin-top: 32px;
@@ -168,6 +175,11 @@ nav ul li {
 
 }
 
+.col-lg-about-6 {
+  width: 50%;
+
+}
+
 /* hero & work */
 #hero {
   background-color: #e5e5e5;
@@ -207,6 +219,51 @@ footer ul li {
 
 footer .fab {
   font-size: 38px;
+}
+
+
+/*Animation*/
+
+@keyframes color-change {
+  0% {
+    fill: #f2e1bf;
+  }
+  50% {
+    fill: #fcffad;
+  }
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
 /* ==============================
 Medium devices (larger than 767px)
