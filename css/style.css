@@ -58,8 +58,8 @@ a:active {
   text-decoration: none;
 }
 
-img {
-  width: 100%;
+#about img {
+  width: 70%;
 }
 
 /* Buttons */
@@ -94,7 +94,7 @@ img {
   background-color: #000;
   color: #fff;
   text-align: center;
-  padding: 30px 0;
+  padding: 40px 0;
   margin-bottom: 20px;
 }
 
@@ -102,7 +102,6 @@ img {
 header {
   background-color:#e5e5e5;
   padding: 10px 0 5px;
-
 }
 
 .logo {
@@ -113,17 +112,6 @@ header {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 350px;
-}
-
-
-}
-
-.center-pic {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
 }
 
 nav {
@@ -146,13 +134,6 @@ nav ul li {
 .container {
   max-width: 1200px;
   padding: 0 20px;
-  margin: 0 auto;
-}
-
-.containers {
-  max-width: 1200px;
-  padding-left: 99px;
-  padding-right: 99px;
   margin: 0 auto;
 }
 
@@ -195,6 +176,11 @@ nav ul li {
 
 #about h1 {
   color: #f09641;
+}
+
+#about h1, h2 {
+  text-align: center;
+
 }
 
 #work h2 {
@@ -298,8 +284,21 @@ Medium devices (larger than 767px)
   .container {
     padding: 0 20px;
   }
+
+  #about img {
+
+    width:65%;
+  }
+
+#about h2 {
+
+  text-align: left;
 }
 
+#skills-tools h2 {
+  text-align: left;
+}
+}
 /* ==============================
 Small devices (smaller than 768px)
 ================================= */
@@ -314,13 +313,6 @@ Small devices (smaller than 768px)
 
   .logo {
     width: 70px;
-  }
-
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 250px;
   }
 
   nav {
@@ -341,34 +333,19 @@ Small devices (smaller than 768px)
     line-height: 1.4;
   }
 
-  .center-about-hero {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 500px;
-  }
-
   .container {
-    padding: 0 10px;
-  }
+   padding: 0 15px;
+ }
 
-  [class*="col-"] {
-    padding: 0;
-  }
+ [class*="col-"] {
+   padding: 0;
+ }
 
-  .col-sm-12 {
-    width: 100%;
-  }
+ .col-sm-12 {
+   width: 100%;
+ }
 
-  .button {
-    /* overwrite browser defaults */
-    margin: 0 0 10px 0;
-
-  }
-
-  .container {
-    max-width: 1200px;
-    padding: 10px 0 0;
-    margin: 10px 10px 10px 10px;
+  #about img {
+    width:50%;
   }
 }
