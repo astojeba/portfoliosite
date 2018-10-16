@@ -58,8 +58,14 @@ a:active {
   text-decoration: none;
 }
 
+img {
+
+width: 100%;
+
+}
+
 #about img {
-  width: 70%;
+  max-width: ;
 }
 
 /* Buttons */
@@ -104,6 +110,7 @@ header {
   padding: 10px 0 5px;
 }
 
+
 .logo {
   width: 100px;
 }
@@ -130,6 +137,20 @@ nav ul li {
   margin-left: 40px;
 }
 
+#triangle h2.section-title:after {
+    position: absolute;
+    content:;
+    top: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-top: 0.5em #212121 solid;
+    border-right: 0.5em solid transparent;
+    border-bottom: 0.5em solid transparent;
+    border-left: 0.5em solid transparent;
+    margin-left: -0.5em;
+}
+
 /* Container & Columns */
 .container {
   max-width: 1200px;
@@ -146,6 +167,19 @@ nav ul li {
   content: "";
   clear: both;
   display: table;
+
+}
+
+.row-style {
+padding: 20px 0;
+display: inline-block;
+border-bottom: 1px solid #e2e2e2;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .col-lg-5 {
@@ -182,6 +216,9 @@ nav ul li {
   text-align: center;
 
 }
+
+#about img {
+width: 500px;}
 
 #work h2 {
   padding: 0;
@@ -286,9 +323,7 @@ Medium devices (larger than 767px)
   }
 
   #about img {
-
-    width:65%;
-  }
+  width: 350px;}
 
 #about h2 {
 
@@ -298,6 +333,10 @@ Medium devices (larger than 767px)
 #skills-tools h2 {
   text-align: left;
 }
+.row-style {
+padding: 20px 15px;
+}
+
 }
 /* ==============================
 Small devices (smaller than 768px)
@@ -314,6 +353,9 @@ Small devices (smaller than 768px)
   .logo {
     width: 70px;
   }
+
+  #about img {
+  width: 250px;}
 
   nav {
     float: none;
@@ -348,4 +390,9 @@ Small devices (smaller than 768px)
   #about img {
     width:50%;
   }
+
+  .row-style {
+  padding: 20px 15px;
+  }
+
 }
