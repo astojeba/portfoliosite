@@ -5,6 +5,7 @@ Secondary Color (Black): #333333;
 Tertiary Color (Grey): #bebebe
 Split-Complementary Value (Teal):#41f0e7
 */
+
 * {
   box-sizing: border-box;
 }
@@ -59,7 +60,7 @@ a:active {
 }
 
 img {
- width: 100%;
+  width: 100%;
 }
 
 /* Buttons */
@@ -152,7 +153,6 @@ nav ul li {
   content: "";
   clear: both;
   display: table;
-
 }
 
 #work .row {
@@ -170,9 +170,7 @@ nav ul li {
 
 .col-lg-6 {
   width: 50%;
-
 }
-
 
 /* hero & work */
 #hero {
@@ -193,7 +191,6 @@ nav ul li {
 
 #about h1, h2 {
   text-align: center;
-
 }
 
 #about img {
@@ -206,16 +203,16 @@ nav ul li {
 
 .heading:after {
   position: absolute;
-    content: " ";
-    top: 100%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    border-top: 0.5em #212121 solid;
-    border-right: 0.5em solid transparent;
-    border-bottom: 0.5em solid transparent;
-    border-left: 0.5em solid transparent;
-    margin-left: -0.5em;
+  content: " ";
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-top: 0.5em #212121 solid;
+  border-right: 0.5em solid transparent;
+  border-bottom: 0.5em solid transparent;
+  border-left: 0.5em solid transparent;
+  margin-left: -0.5em;
 }
 
 /* footer */
@@ -240,7 +237,6 @@ footer ul li {
 footer .fab {
   font-size: 38px;
 }
-
 
 /*Animation*/
 
@@ -316,76 +312,78 @@ Medium devices (larger than 767px)
   }
 
   #about img {
-  width: 350px;}
-
-#about h2 {
-
-  text-align: left;
-}
-
-#skills-tools h2 {
-  text-align: left;
-}
-.row-style {
-padding: 20px 15px;
-}
-
-}
-/* ==============================
-Small devices (smaller than 768px)
-================================= */
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 16px;
+    width: 350px;
   }
 
-  header {
-    text-align:center;
+    #about h2 {
+      text-align: left;
+    }
+
+    #skills-tools h2 {
+      text-align: left;
+    }
+
+    .row-style {
+      padding: 20px 15px;
+    }
+
   }
+  /* ==============================
+  Small devices (smaller than 768px)
+  ================================= */
+  @media only screen and (max-width: 767px) {
+    body {
+      font-size: 16px;
+    }
 
-  .logo {
-    width: 70px;
-  }
+    header {
+      text-align:center;
+    }
 
-  #about img {
-  width: 250px;}
+    .logo {
+      width: 70px;
+    }
 
-  nav {
-    float: none;
-    margin-top: 10px;
-  }
+    #about img {
+      width: 250px;
+    }
 
-  nav ul {
-    display: inline-block;
-  }
+      nav {
+        float: none;
+        margin-top: 10px;
+      }
 
-  nav ul li {
-    margin: 0 20px;
-  }
+      nav ul {
+        display: inline-block;
+      }
 
-  h1 {
-    font-size: 2em;
-    line-height: 1.4;
-  }
+      nav ul li {
+        margin: 0 20px;
+      }
 
-  .container {
-   padding: 0 15px;
- }
+      h1 {
+        font-size: 2em;
+        line-height: 1.4;
+      }
 
- [class*="col-"] {
-   padding: 0;
- }
+      .container {
+        padding: 0 15px;
+      }
 
- .col-sm-12 {
-   width: 100%;
- }
+      [class*="col-"] {
+        padding: 0;
+      }
 
-  #about img {
-    width:50%;
-  }
+      .col-sm-12 {
+        width: 100%;
+      }
 
-  .row-style {
-  padding: 20px 15px;
-  }
+      #about img {
+        width:50%;
+      }
 
-}
+      .row-style {
+        padding: 20px 15px;
+      }
+
+    }
